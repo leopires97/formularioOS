@@ -9,11 +9,11 @@
 <body>
 	<div class="container"> <!-- abre um container que contém a página em si-->
 		<div class="jumbotron" style="margin-top: -30px; width: 980px;" id="jumbo"> <!-- componente geralmente usado para exibir mensagens, nesse caso sendo usado para o formulário -->
-			<div class="input-group mb-3" style="margin-top: -20px;">
-				<input type="text" class="form-control" style="text-align: center;" id="qtdItem">
+			<div class="input-group mb-3" style="margin-top: -20px;" id="inputGroup">
+				<input type="text" class="form-control" style="text-align: center;" id="qtdItem" placeholder="Coloque a quantidade de itens aqui!">
 				<div class="input-group-append">
-				  <button class="btn btn-outline-secondary" type="submit" onclick="criarItem();">Gerar</button>
-				  <button class="btn btn-outline-secondary" type="submit" onclick="window.print();return false;">Imprimir</button>
+				  <button class="btn btn-outline-secondary" type="button" onclick="criarItem();">Gerar</button>
+				  <button class="btn btn-outline-secondary" type="button" onclick="window.print();return false;">Imprimir</button>
 				</div>
 			</div>
 			<img src="images/topo.png" style="width: 920px;" media="print">
